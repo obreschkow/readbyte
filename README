@@ -1,14 +1,13 @@
 OVERVIEW
-====================================================================================================================
+==============================================================================================================
 
-ReadByte is a simple Fortran routine to read individual bytes and 4/8-byte reals and integers from any
-file. Developed and tested using gfortran 4.4.7 and 5.0.0.
+ReadByte is a simple Fortran routine to read individual bytes and 4/8-byte reals and integers from any file.
 
-Copyright Danail Obreschkow (danail.obreschkow@icrar.org), 2017-2018
+Copyright Danail Obreschkow (danail.obreschkow@icrar.org), 2017-2021
 
 
 SIMPLE USE
-==========================================================================================================
+==============================================================================================================
 
 Compile using
 > make clean; make
@@ -16,7 +15,6 @@ Compile using
 Run using
 > ./readbyte inputfilename index [number] [step]
 
-where
-index = index, of first byte to read (index = 1 is the first byte in the file)
-number = number of single bytes and strings of 4/8 bytes to read from the file
-step = step bytes between successive objects
+index  = index of first byte to read, where 1 denotes the first byte in the file
+number = number of objects to read (default = 1)
+step   = number of bytes between successive objects (default = 1)

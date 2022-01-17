@@ -3,7 +3,6 @@ FC = gfortran
 
 # compiler flags (try dfferent ones, if the default line does not work)
 #FCFLAGS = -g -O0 -fbounds-check -fwhole-file -ffpe-trap=invalid,zero,overflow,underflow -Wall -Wunused -Wuninitialized -Wsurprising -Wconversion
-#FCFLAGS = -O3 -fopenmp -fdefault-real-8
 FCFLAGS = -O0
 
 # List of executables to be built within the package
